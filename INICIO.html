@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Restaurante de comida casera con desayuno y almuerzo en Bogotá. Tayzon" />
+  <title>Tayzon</title>
+  <link rel="icon" href="IMG/LOGO.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="INICIO.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <header class="macate">
+    <img src="IMG/LOGO.png" alt="Logo" class="logo" />
+    <div class="titulo">RESTAURANTE TAYZON</div>
+    <div class="memenu" id="macarronArea">
+      <div class="fusion2">
+        <img src="IMG/macarron.png" alt="pasta" class="macarron" />
+        <svg class="curva-svg" width="150" height="200" viewBox="-6 4 200 420" aria-labelledby="menuTitle" role="img">
+          <title id="menuTitle">Opciones</title>
+          <defs>
+            <path id="curvaOpciones" d="M 20 230 C 200 140, 200 70, 130 21" fill="none" />
+          </defs>
+          <text id="textoOpciones" class="texto-opciones" font-size="45" fill="white" font-family="Poppins, sans-serif" letter-spacing="4">
+            <textPath href="#curvaOpciones" startOffset="0%">opciones</textPath>
+          </text>
+        </svg>
+      </div>
+      <ul class="menu" id="menuOpciones">
+        <li class="op"><a class="mn" href="acceder.html">Acceder</a></li>
+        <li class="op"><a class="mn" href="PERFILADM.html">Perfil</a></li>
+        <li class="op"><a class="mn" href="MENU.html">Menús</a></li>
+        <li class="op"><a class="mn" href="">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- OLLA (opcional). Si no la usas, puedes dejarla comentada -->
+  <!--
+  <section class="olla">
+    <div class="ola">
+      <div class="olla-contenedor">
+        <img class="hervir" src="IMG/OLLA.png" alt="olla roja" />
+        <article>
+          <button class="arrow left" onclick="changeText(-1)">‹</button>
+          <div class="contenido-flex" id="contenidoFlex">
+            <figure class="circle">
+              <img id="olla-img" src="" alt="foto" style="display:none" />
+            </figure>
+            <iframe id="map-frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.9656794679329!2d-74.09063807987195!3d4.6732924906739575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b9e2f48a2f5%3A0x1c51cbdecfff8ace!2sRestaurante%20Tayzon!5e0!3m2!1ses!2sco!4v1752027679104!5m2!1ses!2sco"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              style="display:none">
+            </iframe>
+            <div class="text-box" id="text-box" style="display:none"></div>
+          </div>
+          <button class="arrow right" onclick="changeText(1)">›</button>
+        </article>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <footer class="pie">
+    <div class="contenido-footer">
+      <div class="columna">
+        <p>📍 Ac. 66 #68b-02, Bogotá</p>
+        <p>📞 322 8843514</p>
+        <p>📧 tayrest.com</p>
+      </div>
+      <div class="columna">
+        <p>🕒 Lun a Sáb: 8am - 3pm</p>
+        <p>🍲 “Un sabor familiar”</p>
+        <p>© 2023 Restaurante Tayzon</p>
+      </div>
+      <div class="columna">
+        <p>🌐 Redes sociales:</p>
+        <a href="https://www.facebook.com/people/Tayzon-Resturant/pfbid0VHvreXvJHWoPhZ1AbsJHF4zSdwURUr9QoEZ1ngZC23KEb215nZinxCNtNQtqFu5ml/?mibextid=ZbWKwL"><img src="IMG/FACEBOK.webp" class="icono-red" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/restaurante_tay/"><img src="IMG/INSTA.png" class="icono-red" alt="Instagram" /></a>
+        <a href="https://wa.link/jdme5a"><img src="IMG/WHASAP.webp" class="icono-red" alt="WhatsApp" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="INICIO.js" defer></script>
+</body>
+</html>
