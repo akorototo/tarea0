@@ -1,0 +1,20 @@
+@media (max-width: 992px) {
+  .titulo { font-size: 48px; }
+  .fusion2 { width: 180px; }
+}
+
+@media (max-width: 768px) {
+  .titulo { font-size: 36px; text-align: center; }
+  .logo { width: 120px; }
+  .fusion2 { width: 160px; }
+  .curva-svg text { font-size: 32px; }
+
+  /* Reubicar menú para que no desborde */
+  #menuOpciones {
+    right: 0;
+    left: auto;
+    top: 20px;
+  }
+
+  .text-box { font-size: 18px; text-align: center; }
+}

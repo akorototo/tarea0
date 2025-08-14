@@ -1,0 +1,210 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* ================== AJUSTES GENERALES ================== */
+body {
+  background-image: url("IMG/RERE.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ================== CABECERA ================== */
+.macate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.titulo {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  flex: 1;
+}
+
+/* ================== MACARRÓN Y MENÚ ================== */
+.memenu {
+  position: relative;
+  display: inline-block;
+}
+
+.fusion2 {
+  position: relative;
+  width: 200px; /* base: el SVG se escalará con este contenedor */
+}
+
+.macarron {
+  width: 50%;
+  display: block;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  left: 110px;
+}
+
+.curva-svg {
+  position: absolute;
+  top: 9px;
+  left: 120px;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.curva-svg text {
+  transition: all 0.3s ease;
+}
+
+.texto-opciones:hover {
+  fill: #ba4712;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  background-color: rgb(244, 199, 0);
+  padding: 10px;
+  margin-top: 100px;
+  position: absolute;
+  left: -135px;
+  border-radius: 8px;
+}
+
+.mn {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f2f1f1;
+}
+
+.mn:hover {
+  color: #ba4712;
+}
+
+.op {
+  padding: 9px 13px;
+  border-radius: 8px;
+}
+
+.op:hover {
+  background-color: #f6ef1c40;
+  transform: scale(1.05);
+}
+
+/* Mostrar/ocultar menú solo con CSS */
+#menuOpciones {
+  position: relative;
+  top: 40px;
+  right: 290px;
+  background-color: rgb(244, 199, 0);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: auto;
+}
+
+.memenu:hover #menuOpciones,
+.memenu:focus-within #menuOpciones {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ================== OLLA (opcional) ================== */
+.contenido-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+}
+
+#olla-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+iframe#map-frame {
+  flex: 1 1 320px;
+  max-width: 360px;
+  height: 290px;
+  border-radius: 10px;
+  border: none;
+  transition: opacity 0.3s ease;
+  display: none;
+}
+
+.text-box {
+  flex: 1 1 auto;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 570;
+  text-align: justify;
+  display: none;
+  transition: opacity 0.3s ease;
+  padding: 5px 8px;
+}
+
+/* ================== PIE DE PÁGINA ================== */
+.pie {
+  padding: 50px 20px 70px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  animation: aparecerPie 1s ease-out;
+}
+
+.contenido-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.columna {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.columna p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.icono-red {
+  width: 58px;
+  margin-right: 10px;
+}
+
+.icono-red:hover {
+  transform: scale(1.2);
+}
+
+@keyframes aparecerPie {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
